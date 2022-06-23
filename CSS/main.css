@@ -9,8 +9,15 @@ body {
 }
 
 #player {
-    width: 10vw;
-    height: 5vw;
+    /* width: 10vw;
+    height: 5vh; */
     background-color: crimson;
+    position: absolute;
+}
+
+.obstacle {
+    /* width: 10vw;
+    height: 5vh; */
+    background-color: rgb(221, 225, 11);
     position: absolute;
 }
