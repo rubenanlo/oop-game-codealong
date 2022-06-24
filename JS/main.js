@@ -1,5 +1,3 @@
-
-
 class Game {
     constructor(){
         this.time = 0;
@@ -58,7 +56,7 @@ class Player {
     constructor(){
         this.positionX = 45;
         this.positionY = 0;
-        this.height = 20;
+        this.height = 10;
         this.width = 10;
 
         this.domElement = this.createDomElement();
@@ -94,10 +92,10 @@ class Player {
 
 class Obstacle {
     constructor(){
-        this.positionX = 45;
         this.positionY = 90;
         this.width = 10;
         this.height = 10;
+        this.positionX = Math.floor(Math.random() * (100 - this.width + 1)); //random number bw 0 and (100-width)
 
         this.domElement = this.createDomElement();
 
@@ -124,8 +122,6 @@ class Obstacle {
         this.domElement.style.bottom = this.positionY + "vh";
     }
 }
-
-
 
 const game = new Game();
 game.start();
